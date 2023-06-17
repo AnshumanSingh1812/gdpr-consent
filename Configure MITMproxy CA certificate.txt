@@ -1,0 +1,50 @@
+### First, check if the Android emulator already has the mitmproxy's CA certificate installed using ADB, using the following command:
+
+$ adb shell settings get secure user_certificate
+
+### Running this command will display the path to the user certificate file on the emulator. If the mitmproxy's CA certificate is installed, the output will show the path to the certificate file. If it is not installed, the output will be empty or return "null".
+
+### If the output of this command is "null", follow these steps to install the mitmproxy's CA certificate on your Android emulator.
+
+Step 1: Start your Android emulator and connect it to your computer.
+
+Step 2: Open a Terminal or Command Prompt or PowerShell on your computer and navigate to the directory where the mitmproxy's CA certificate is located. 
+
+### For Linux and MacOS, default location is "~/.mitmproxy/mitmproxy-ca-cert.pem"
+### For Windows OS, default location is "C:\Users\<user_directory>\.mitmproxy\mitmproxy-ca-cert.pem"
+
+Step 3: Run adb with root privileges.
+
+$ adb root
+
+Step 4: Use the following ADB command to push the CA certificate to the emulator:
+
+$ adb push mitmproxy-ca-cert.pem /sdcard/
+
+Step 5: Once the certificate is successfully pushed to the emulator, run the following ADB command to open a shell session on the emulator:
+
+$ adb shell
+
+Step 6: Inside the emulator shell, navigate to the directory where the certificate is located:
+
+$ cd /sdcard/
+
+Step 7 : Use the following command to install the certificate as a user certificate:
+
+$ settings put secure user_setup_complete 0
+$ settings put secure install_non_market_apps 1
+$ settings put secure user_certificate <path_to_certificate>
+
+Replace <path_to_certificate> with the actual path to the certificate file on the emulator. For example, if the certificate is named mitmproxy-ca-cert.pem, the command would be:
+
+$ settings put secure user_certificate /sdcard/mitmproxy-ca-cert.pem
+
+Step 8: Exit the emulator shell by typing exit.
+
+Step 9: Restart the Android emulator.
+
+Step 10: Once the Android emulator is booted, run the following command again to verify if the Android emulator has the mitmproxy's CA certificate installed:
+
+$ adb shell settings get secure user_certificate
+
+### Instead of "null", the output of this command should be "/sdcard/mitmproxy-ca-cert.pem" now.

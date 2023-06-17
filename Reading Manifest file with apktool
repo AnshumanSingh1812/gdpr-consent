@@ -1,0 +1,21 @@
+### To read the AndroidManifest.xml file using apktool, you can follow these steps:
+
+### Install apktool: Download and install apktool from the official website. You can find the download link and installation instructions at: https://ibotpeaches.github.io/Apktool/install/
+
+### Open a command prompt or terminal. Navigate to the directory where the APK file is located. For example:
+
+$ cd C:\Users\ansh1\Downloads\strava-308-9
+
+### Run the following command to decompile the APK:
+
+$ apktool d -o output-folder app.apk
+
+### Replace app.apk with the name of the APK file you want to decompile. This command will create a new folder named output-folder (you can choose any desired name) and decompile the APK into it. Navigate to the output folder:
+
+$ cd output-folder
+
+### Locate and open the AndroidManifest.xml file in a text editor of your choice. You should find it in the output-folder directory.
+
+$ notepad AndroidManifest.xml
+
+### This command will open the file in Notepad. Alternatively, you can use any text editor you prefer, such as Visual Studio Code, Sublime Text, or Atom.
