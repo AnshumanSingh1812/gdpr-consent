@@ -1,0 +1,228 @@
+<HTTPFlow
+  request = Request(CONNECT 142.250.80.42:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50230, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50258)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.80.42:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39366, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39400)>
+
+<HTTPFlow
+  request = Request(CONNECT 2a03:2880:f012:100:face:b00c:0:2:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39950, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=40080)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.80.74:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39496, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39560)>
+
+<HTTPFlow
+  request = Request(CONNECT 157.240.241.17:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39700, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39792)>
+
+<HTTPFlow
+  request = Request(CONNECT 157.240.241.17:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:40292, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=40424)>
+
+<HTTPFlow
+  request = Request(CONNECT 157.240.241.17:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50298, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50336)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.81.234:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:40936, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=41074)>
+
+<HTTPFlow
+  request = Request(CONNECT 2a03:2880:f012:100:face:b00c:0:2:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50436, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50502)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.81.234:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:51368, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=51544)>
+
+<HTTPFlow
+  request = Request(CONNECT 157.240.241.17:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50604, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50704)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.251.41.10:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:51708, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=51870)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.80.10:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39298, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39300)>
+
+<HTTPFlow
+  request = Request(CONNECT 157.240.241.17:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39340, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39394)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.176.202:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39822, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39954)>
+
+<HTTPFlow
+  request = Request(CONNECT 2a03:2880:f012:100:face:b00c:0:2:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39450, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39506)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.65.202:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:40180, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=40302)>
+
+<HTTPFlow
+  request = Request(CONNECT 157.240.241.17:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50284, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50324)>
+
+<HTTPFlow
+  request = Request(CONNECT 2a03:2880:f012:100:face:b00c:0:2:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:40600, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=40764)>
+
+<HTTPFlow
+  request = Request(CONNECT 2a03:2880:f012:100:face:b00c:0:2:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50430, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50492)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.176.202:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50590, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50700)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.80.34:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:51220, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=51340)>
+
+<HTTPFlow
+  request = Request(CONNECT 2a03:2880:f012:100:face:b00c:0:2:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:51506, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=51666)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.65.234:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:51088, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=51230)>
+
+<HTTPFlow
+  request = Request(CONNECT 157.240.241.17:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39326, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39378)>
+
+<HTTPFlow
+  request = Request(CONNECT 2a03:2880:f012:100:face:b00c:0:2:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39440, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39500)>
+
+<HTTPFlow
+  request = Request(CONNECT 157.240.241.17:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:51156, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=51292)>
+
+<HTTPFlow
+  request = Request(CONNECT 2a03:2880:f012:100:face:b00c:0:2:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:40034, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=40174)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.80.106:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39618, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39736)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.65.234:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:40492, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=40658)>
+
+<HTTPFlow
+  request = Request(CONNECT 157.240.241.17:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:39706, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=39802)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.80.74:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50304, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50348)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.80.10:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50192, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50204)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.80.106:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50446, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50508)>
+
+<HTTPFlow
+  request = Request(CONNECT 2a03:2880:f012:100:face:b00c:0:2:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50880, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50950)>
+
+<HTTPFlow
+  request = Request(CONNECT 2607:f8b0:4006:817::2002:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:51496, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=51652)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.250.65.202:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:50876, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=50948)>
+
+<HTTPFlow
+  request = Request(CONNECT 142.251.32.106:443)
+  response = Response(502, unknown content type, 198b)
+  client_conn = Client(192.168.1.175:52154, state=open)
+  server_conn = Server(192.168.1.175:8080, state=open, src_port=52308)>
+

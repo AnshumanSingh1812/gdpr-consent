@@ -2,6 +2,7 @@ from droidbot.device import Device
 from droidbot.adapter.adb import ADB
 from mitmproxy.io import FlowReader
 
+import socket
 import os
 import hashlib
 import argparse
@@ -85,8 +86,8 @@ def capture_screenshot(adb_object, out_dir_path):
 
 def tear_down(pro_mitm, pro_objection, listen_port):
 	try:
-		os.killpg(os.getpgid(pro_mitm.pid), signal.SIGKILL)							
-	except Exception as e:		
+		os.killpg(os.getpgid(pro_mitm.pid), signal.SIGKILL)
+	except Exception as e:
 		print(e)
 		pass
 
@@ -141,22 +142,29 @@ def get_mitm_request_host(app_output_dir):
 		return None
 	
 	requested_hostname_set = set()
+	flow_set = set()
+
 	try:		
 		for file in os.listdir(app_output_dir):
 			if file.endswith('.apk_1') or file.endswith('.apk_2') or file.endswith('.apk_3'):
 				with open(os.path.join(app_output_dir, file), 'rb') as fp:
 					reader = FlowReader(fp)		
 					for flow in reader.stream():			
+						# print(f'\n\n{flow}\n\n')
+						flow_set.add(flow)
 						requested_hostname_set.add(flow.request.host)	
 	except Exception as e:
 		print(e)
 		pass
 
-	print(f'Requested Hostnames Set: {requested_hostname_set}')
+	flow_output_path = os.path.join(app_output_dir, 'flows.txt')
+	with open(flow_output_path, 'w') as flow_file:
+		for flow in flow_set:
+			flow_file.write(str(flow) + '\n\n')
 	output_file_path = os.path.join(app_output_dir, 'requested_hostnames.txt')
 	with open(output_file_path, 'w') as output_file:
 		for hostname in requested_hostname_set:
-			output_file.write(hostname + '\n')
+			output_file.write(hostname + ' ----> ' + str(socket.gethostbyaddr(hostname)[0]) + '\n')
 
 	return requested_hostname_set	
 
@@ -221,3 +229,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
